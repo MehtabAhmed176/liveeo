@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import Comment from './components/comments/Comment'
 
-
 function App() {
   return (
     <div className="App">

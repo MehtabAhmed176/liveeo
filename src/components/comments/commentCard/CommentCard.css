@@ -38,3 +38,34 @@
     /* padding: 1px 16px; */
     /* margin: 15px; */
 }
+
+.pagination {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    list-style: none;
+    font-size: small;
+}
+
+.pagination a {
+    /* color: rgb(54, 50, 50); */
+    float: left;
+    /* padding: 8px 16px; */
+    margin: 3px;
+}
+
+.selected {
+    background-color: #55acee;
+    color: white !important;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+}
+
+
+/*.list {
+    list-style: none;
+    list-style-type: none;
+}
+
+*/
