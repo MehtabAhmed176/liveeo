@@ -2,10 +2,11 @@
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    max-width: 230px;
+    width: 230px;
     background-color: #f6fcff;
     border-radius: 2px;
-    margin: 30px;
+    margin-left: 12px;
+    margin-top: 12px;
     border-radius: 10px;
 }
 
@@ -28,7 +29,13 @@
 
 .card-body {
     font-size: small;
-    padding: 10px 20px;
+    padding: 6px 20px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.long-card {
+    width: 472px !important;
 }
 
 
@@ -39,33 +46,4 @@
     /* margin: 15px; */
 }
 
-.pagination {
-    display: flex;
-    justify-content: right;
-    text-decoration: none;
-    list-style: none;
-    font-size: small;
-}
-
-.pagination a {
-    /* color: rgb(54, 50, 50); */
-    float: left;
-    /* padding: 8px 16px; */
-    margin: 3px;
-}
-
-.selected {
-    background-color: #55acee;
-    color: white !important;
-    border-radius: 50%;
-    height: 28px;
-    width: 28px;
-}
-
-
-/*.list {
-    list-style: none;
-    list-style-type: none;
-}
-
-*/
+.next-nav {}
