@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/MehtabAhmed176/liveeo/static/css/main.5fb3f707.css",
+    "main.js": "/MehtabAhmed176/liveeo/static/js/main.40382577.js",
+    "static/css/42.faea1e5a.chunk.css": "/MehtabAhmed176/liveeo/static/css/42.faea1e5a.chunk.css",
+    "static/js/42.a312c9ad.chunk.js": "/MehtabAhmed176/liveeo/static/js/42.a312c9ad.chunk.js",
+    "static/js/787.1f82bb76.chunk.js": "/MehtabAhmed176/liveeo/static/js/787.1f82bb76.chunk.js",
+    "static/js/727.62d51adc.chunk.js": "/MehtabAhmed176/liveeo/static/js/727.62d51adc.chunk.js",
+    "index.html": "/MehtabAhmed176/liveeo/index.html",
+    "main.5fb3f707.css.map": "/MehtabAhmed176/liveeo/static/css/main.5fb3f707.css.map",
+    "main.40382577.js.map": "/MehtabAhmed176/liveeo/static/js/main.40382577.js.map",
+    "42.faea1e5a.chunk.css.map": "/MehtabAhmed176/liveeo/static/css/42.faea1e5a.chunk.css.map",
+    "42.a312c9ad.chunk.js.map": "/MehtabAhmed176/liveeo/static/js/42.a312c9ad.chunk.js.map",
+    "787.1f82bb76.chunk.js.map": "/MehtabAhmed176/liveeo/static/js/787.1f82bb76.chunk.js.map",
+    "727.62d51adc.chunk.js.map": "/MehtabAhmed176/liveeo/static/js/727.62d51adc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fb3f707.css",
+    "static/js/main.40382577.js"
+  ]
+}
