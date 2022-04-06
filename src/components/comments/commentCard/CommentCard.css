@@ -31,19 +31,10 @@
     font-size: small;
     padding: 6px 20px;
     line-height: 15px;
-    text-align: justify;
+    /* width: 200px; */
+    /* text-align: justify; */
 }
 
 .long-card {
     width: 472px !important;
 }
-
-
-/* Add some padding inside the card container */
-
-.container {
-    /* padding: 1px 16px; */
-    /* margin: 15px; */
-}
-
-.next-nav {}

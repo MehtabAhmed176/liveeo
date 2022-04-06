@@ -15,7 +15,7 @@
     color: white;
 }
 
-.App-comments-main {
+.App-body {
     /* max-width: 900px; */
     display: flex;
     justify-content: center;
@@ -23,6 +23,11 @@
 
 .App-link {
     color: #61dafb;
+}
+
+.Blank-Component-text {
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes App-logo-spin {
