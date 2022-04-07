@@ -7,7 +7,7 @@ import Tasks from "./components/tasks/Tasks";
 import Admin from "./components/admin/Admin";
 import Home from "./components/Home/Home";
 import NavigationBar from "./components/navigation/Navigation";
-import Map from "./components/comments/map/Map";
+import Map from "./components/map/Map";
 import Profile from './components/profile/Profile';
 const Comment = React.lazy(() => import("./components/comments/Comment"));
 

@@ -30,9 +30,14 @@
 .card-body {
     font-size: small;
     padding: 6px 20px;
-    line-height: 15px;
-    /* width: 200px; */
-    /* text-align: justify; */
+    /* line-height: 15px; */
+    height: 40px;
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
 }
 
 .long-card {

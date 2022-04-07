@@ -1,38 +1,47 @@
-    .topnav {
-        background-color: #030422;
-        height: 55px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .topnav a {
-        color: #f2f2f2;
-        /* text-align: center; */
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .active {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0) !important;
-    }
-    
-    .avatar-position {
-        position: absolute;
-        top: -11px !important;
-        right: 10px!important;
-    }
-    
-    .avatar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
-        margin-right: 30px;
-        background-color: #f2f2f2 !important;
-        color: rgb(29, 28, 28) !important;
-    }
+.topnav {
+    background-color: #030422;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) !important;
+}
+
+.avatar-position {
+    position: absolute;
+    top: -11px !important;
+    right: 10px!important;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 30px;
+    background-color: #f2f2f2 !important;
+    color: rgb(29, 28, 28) !important;
+}
+
+.admin-btn {
+    margin-right: 100px;
+    margin-left: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    height: 4px;
+}

@@ -1,6 +1,6 @@
 import "./CommentCard.css";
-
-function Card({ name, email, body, index }) {
+import DeleteMe from '../DeleteComment'
+function Card({ name, email, body, index, handleDelete }) {
   return (
     <div className={[`card ${(index===4||index===5||index===10||index===11)?"long-card" : ""}`]} >
       <div className="container">
@@ -15,6 +15,9 @@ function Card({ name, email, body, index }) {
           </div>{" "}
         </div>{" "}
         <p className="card-body"> {body.slice(0, 85)} </p>{" "}
+        <div className="delete-btn">
+          <DeleteMe handleDelete={handleDelete}/>
+        </div>
       </div>{" "}
     </div>
   );

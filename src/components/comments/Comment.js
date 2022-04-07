@@ -1,5 +1,6 @@
 import Card from "./commentCard/CommentCard";
 import fetchComments from "../../api/commentsApi";
+import deleteCommentById from '../../api/deleteCommentApi'
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import "./Comments.css";
@@ -31,6 +32,7 @@ function Comment() {
 
   useEffect(() => {
     fetchData(1);
+    console.log('component did updated or did loaded firstime')
   }, []);
   const List = comments.map((item,index) => {
     return (
@@ -40,6 +42,7 @@ function Comment() {
         name={item.name}
         email={item.email}
         body={item.body}
+        handleDelete={()=>handleDelete(item.id)}
       />
     );
   });
@@ -47,6 +50,13 @@ function Comment() {
   const handlePageClick = (e) => {
     fetchData(e.selected);
   };
+
+  const handleDelete = async(id) => {
+   await deleteCommentById(id)
+   const newComments = comments.filter((comment) => comment.id !== id);
+   setComments(newComments);
+  };
+
   return (
     <div style={{maxWidth:"1000px"}}>
       <div style={header}>
