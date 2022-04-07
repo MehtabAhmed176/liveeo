@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/liveeo/static/css/main.acf3615a.css",
-    "main.js": "/liveeo/static/js/main.15c78ac8.js",
+    "main.js": "/liveeo/static/js/main.7049dcdc.js",
     "static/css/92.ec375b3c.chunk.css": "/liveeo/static/css/92.ec375b3c.chunk.css",
     "static/js/92.5b879570.chunk.js": "/liveeo/static/js/92.5b879570.chunk.js",
     "static/js/787.1f82bb76.chunk.js": "/liveeo/static/js/787.1f82bb76.chunk.js",
     "static/js/172.92e78382.chunk.js": "/liveeo/static/js/172.92e78382.chunk.js",
     "index.html": "/liveeo/index.html",
     "main.acf3615a.css.map": "/liveeo/static/css/main.acf3615a.css.map",
-    "main.15c78ac8.js.map": "/liveeo/static/js/main.15c78ac8.js.map",
+    "main.7049dcdc.js.map": "/liveeo/static/js/main.7049dcdc.js.map",
     "92.ec375b3c.chunk.css.map": "/liveeo/static/css/92.ec375b3c.chunk.css.map",
     "92.5b879570.chunk.js.map": "/liveeo/static/js/92.5b879570.chunk.js.map",
     "787.1f82bb76.chunk.js.map": "/liveeo/static/js/787.1f82bb76.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.acf3615a.css",
-    "static/js/main.15c78ac8.js"
+    "static/js/main.7049dcdc.js"
   ]
 }
