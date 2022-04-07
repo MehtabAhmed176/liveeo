@@ -13,9 +13,9 @@ function NavigationBar() {
         <NavLink to="/task">Tasks</NavLink>
         <NavLink to="/dashboard">Dashboard</NavLink>
         <NavLink to="/comments">Comments</NavLink>
-        <NavLink to="/admin" style={{marginRight:"55px"}}>Admin</NavLink>
-        <div style={{position:"absolute",top:"-27px",right:"-22px"}}>
-          <p className="avatar">L</p>
+        <NavLink to="/admin" style={{marginRight:"100px"}}>Admin</NavLink>
+        <div className="avatar-position">
+          <NavLink to="/profile" className="avatar">L</NavLink>
         </div>
       </div>
       
