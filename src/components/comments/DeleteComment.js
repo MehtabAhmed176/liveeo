@@ -1,10 +1,14 @@
-
 import { AiFillDelete } from "react-icons/ai";
-// const handleDelete = ()=>{
-//     console.log('Handle delete working')
-// }
-function Delete({handleDelete}) {
-  return <div> <AiFillDelete onClick={handleDelete}/></div>;
+function Delete({ handleDelete }) {
+  return (
+    <div>
+      {" "}
+      <AiFillDelete
+        onClick={handleDelete}
+        style={{ fontSize: "17px", color: "#84829e" }}
+      />
+    </div>
+  );
 }
 
 export default Delete;

@@ -1,7 +1,7 @@
 import Card from "./commentCard/CommentCard";
 import fetchComments from "../../api/commentsApi";
 import deleteCommentById from "../../api/deleteCommentApi";
-import addComment from '../../api/createComment'
+import addComment from "../../api/createComment";
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import CreateComment from "./commentCard/CreateCard";
@@ -23,9 +23,10 @@ function Comment() {
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(false);
   const [toggle, settoggle] = useState(false);
+  const [edit, setEdit] = useState(false);
   const [totalPages, seTotalPages] = useState(1);
   const [formData, setFormData] = useState({
-    id: 18999,
+    id: "",
     name: "kabeer khan",
     email: "kabeer@gmail.com",
     body: "",
@@ -40,20 +41,26 @@ function Comment() {
     setComments(response.data);
   }
 
-  const createNewComment = async() => {
-    console.log("save is working...");
-    let randomId = Math.floor(Math.random() * 1000) + 500;
-    let newValue = { ...formData, id: randomId };
-    setFormData(newValue);
-    const updatedCarsArray = [...comments, newValue];
-    await addComment(newValue)
-    setComments(updatedCarsArray);
-    settoggle(!toggle);
+  const createOrUpdateComment = async () => {
+    if (edit) {
+      console.log("I am from Edit");
+      console.log("id and body is", formData.id, formData.body);
+      // @Todo Find the object in the Comment array and update it , dont mutate the state directly
+      settoggle(!toggle);
+      setEdit(!edit);
+    } else {
+      let randomId = Math.floor(Math.random() * 1000) + 500;
+      let newValue = { ...formData, id: randomId };
+      setFormData(newValue);
+      const updatedCommentArray = [...comments, newValue];
+      await addComment(newValue);
+      setComments(updatedCommentArray);
+      settoggle(!toggle);
+    }
   };
 
   useEffect(() => {
-    fetchData(1);
-    console.log("component did updated or did loaded firstime");
+    fetchData();
   }, []);
   const List = comments.map((item, index) => {
     return (
@@ -64,6 +71,7 @@ function Comment() {
         email={item.email}
         body={item.body}
         handleDelete={() => handleDelete(item.id)}
+        handleUpdate={() => handleUpdate(item.id, item.body)}
       />
     );
   });
@@ -76,6 +84,13 @@ function Comment() {
     await deleteCommentById(id);
     const newComments = comments.filter((comment) => comment.id !== id);
     setComments(newComments);
+  };
+
+  const handleUpdate = async (id, data) => {
+    let newValue = { ...formData, id: id, body: data };
+    setFormData(newValue);
+    settoggle(!toggle);
+    setEdit(!edit);
   };
 
   const handleChange = (e) => {
@@ -110,10 +125,11 @@ function Comment() {
       <div>
         <CreateComment
           isShow={toggle}
+          isEdit={edit}
           handleClose={handleToggle}
           value={formData}
           handleChange={handleChange}
-          handleSave={createNewComment}
+          handleSave={createOrUpdateComment}
         />
       </div>
     </div>

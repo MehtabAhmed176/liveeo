@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 function Dashboard() {
-  return <div>I am Dashboard</div>;
+  return <div>I am Dashboard</div>
 }
 
 export default Dashboard;

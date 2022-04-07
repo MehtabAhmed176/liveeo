@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navigation.css";
 function NavigationBar() {
   return (
-    <div class="topnav">
+    <div className="topnav">
       <div>
         <Link to="/" style={{ marginLeft: "70px" }}>
           LiveEO

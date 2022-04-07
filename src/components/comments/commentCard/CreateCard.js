@@ -1,20 +1,19 @@
 import "./CommentCard.css";
 function CreateComment({
   isShow,
+  isEdit,
   handleClose,
   value,
   handleChange,
   handleSave,
-})
- {
+}) {
   return (
     <div
       id="myModal"
-      class="modal"
-      style={{ display: `${isShow ? "block" : "none"}` }}
-    >
-      <div class="modal-content">
-        <span class="close" onClick={handleClose}>
+      className="modal"
+      style={{ display: `${isShow ? "block" : "none"}` }}>
+      <div className="modal-content">
+        <span className="close" onClick={handleClose}>
           &times;
         </span>
         <p>Add new Comments..</p>
@@ -31,7 +30,7 @@ function CreateComment({
             </div>
             <div>
               <button className="save-btn" onClick={handleSave}>
-                Save
+                {isEdit ? "Update" : "Save"}
               </button>
             </div>
           </form>
