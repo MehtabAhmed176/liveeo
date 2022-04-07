@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/liveeo/static/css/main.5fb3f707.css",
-    "main.js": "/liveeo/static/js/main.e49689bb.js",
+    "main.css": "/liveeo/static/css/main.774188d4.css",
+    "main.js": "/liveeo/static/js/main.c1901ddb.js",
     "static/css/42.faea1e5a.chunk.css": "/liveeo/static/css/42.faea1e5a.chunk.css",
-    "static/js/42.1c28f9e0.chunk.js": "/liveeo/static/js/42.1c28f9e0.chunk.js",
+    "static/js/42.a312c9ad.chunk.js": "/liveeo/static/js/42.a312c9ad.chunk.js",
     "static/js/787.1f82bb76.chunk.js": "/liveeo/static/js/787.1f82bb76.chunk.js",
-    "static/js/427.0e5706a7.chunk.js": "/liveeo/static/js/427.0e5706a7.chunk.js",
+    "static/js/727.62d51adc.chunk.js": "/liveeo/static/js/727.62d51adc.chunk.js",
     "index.html": "/liveeo/index.html",
-    "main.5fb3f707.css.map": "/liveeo/static/css/main.5fb3f707.css.map",
-    "main.e49689bb.js.map": "/liveeo/static/js/main.e49689bb.js.map",
+    "main.774188d4.css.map": "/liveeo/static/css/main.774188d4.css.map",
+    "main.c1901ddb.js.map": "/liveeo/static/js/main.c1901ddb.js.map",
     "42.faea1e5a.chunk.css.map": "/liveeo/static/css/42.faea1e5a.chunk.css.map",
-    "42.1c28f9e0.chunk.js.map": "/liveeo/static/js/42.1c28f9e0.chunk.js.map",
+    "42.a312c9ad.chunk.js.map": "/liveeo/static/js/42.a312c9ad.chunk.js.map",
     "787.1f82bb76.chunk.js.map": "/liveeo/static/js/787.1f82bb76.chunk.js.map",
-    "427.0e5706a7.chunk.js.map": "/liveeo/static/js/427.0e5706a7.chunk.js.map"
+    "727.62d51adc.chunk.js.map": "/liveeo/static/js/727.62d51adc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fb3f707.css",
-    "static/js/main.e49689bb.js"
+    "static/css/main.774188d4.css",
+    "static/js/main.c1901ddb.js"
   ]
 }
