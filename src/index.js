@@ -8,7 +8,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Tasks from "./components/tasks/Tasks";
 ReactDOM.render(
   <React.StrictMode>
-  <HashRouter>
+  <HashRouter basename={"/liveeo"}>
     <App />
   </HashRouter>
   </React.StrictMode>,
